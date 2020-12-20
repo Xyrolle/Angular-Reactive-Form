@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$red: #cf6f6f;
+$black: #263238;
+$purple: #AC0570;
+
+.form-container {
+
+
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+
+  .user-name, .user-age, .user-email {
+    padding: 0 4px 2px 0;
+  }
+
+  .user-input {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.8rem;
+    color: $black;
+  }
+
+  form {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  input.ng-touched.ng-invalid {
+    background: pink;
+    border: 2px solid $red;
+  }
+
+  .error {
+    margin-top: 4px;
+    color: $red;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: $black;
+  }
+
+  .input-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-btn {
+    width: 120px;
+    height: 30px;
+    background: $purple;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid $black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 auto;
+  }
+
+  .add-btn:hover {
+    background-color: darken($purple, 3%);
+  }
+
+  .value-list {
+    margin-bottom: 10px;
+  }
+
+  input {
+    height: 20px;
+    padding: 1px 2px;
+    border-radius: 6px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+}
